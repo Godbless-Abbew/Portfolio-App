@@ -85,7 +85,8 @@ height: 200.26px;
     /* height: 700px; */
     width: 100%;
 }
-h1{
+.angry-grid h1{
+    padding-top: 3%;
     font-weight: 500;
     font-size: 18px;
     line-height: 123.6%;
@@ -121,8 +122,8 @@ h3{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 27px;
     width: 100%;
-    height: 100%;
-    padding-top: 50px;
+    height: 40.625rem;
+    padding-top: 70px;
  }
  #item-0 {
     padding: 5%;
@@ -132,7 +133,7 @@ h3{
     grid-column-start: 1;
     grid-row-end: 2;
     grid-column-end: 2;
-    height: 225px;
+    height: 15.625rem;
     font-size: 15px;
     line-height: 24px;
     text-transform: capitalize;
@@ -147,7 +148,7 @@ h3{
     grid-column-start: 2;
     grid-row-end: 2;
     grid-column-end: 3;
-    height: 225px;
+    height: 15.625rem;
     font-size: 15px;
     line-height: 24px;
     text-transform: capitalize;
@@ -163,6 +164,7 @@ h3{
     grid-row-end: 2;
     grid-column-end: 4;
     font-size: 15px;
+    height: 15.625rem;
     line-height: 24px;
     text-transform: capitalize;
     font-feature-settings: 'calt' off, 'kern' off;
@@ -177,6 +179,7 @@ h3{
     grid-row-end: 3;
     grid-column-end: 2;
     font-size: 15px;
+    height: 15.625rem;
     line-height: 24px;
     text-transform: capitalize;
     font-feature-settings: 'calt' off, 'kern' off;
@@ -191,6 +194,7 @@ h3{
     grid-row-end: 3;
     grid-column-end: 3;
     font-size: 15px;
+    height: 15.625rem;
     line-height: 24px;
     text-transform: capitalize;
     font-feature-settings: 'calt' off, 'kern' off;
@@ -205,6 +209,7 @@ h3{
     grid-row-end: 3;
     grid-column-end: 4;
     font-size: 15px;
+    height: 15.625rem;
     line-height: 24px;
     text-transform: capitalize;
     font-feature-settings: 'calt' off, 'kern' off;
@@ -220,49 +225,208 @@ h3{
     padding-left: 1rem;
 }
 
-.top h2{
-    width: 158px;
-    height: 53px;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 123.6%;
-    text-transform: capitalize;
-    color: #2B2B2B;
+.third-main-content{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
 }
-.top1 h3{
-    width: 258px;
-    height: 53px;
+
+.top{
+    width: 30rem;
+    padding-left: 5rem;
+}
+.top h4{
+    text-align: center;
+    padding: 1rem;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 123.6%;
-    text-transform: capitalize;
-    color: #2B2B2B;
+    font-size: 2rem;
 }
 .top p{
-    width: 470px;
-    height: 88px;
+    width: 30rem;
+    text-align: center;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    text-align: center;
     text-transform: capitalize;
     font-feature-settings: 'calt' off, 'kern' off;
     color: #767676;
-
+}
+.top1{
+    width: 30rem;
+    padding-left: 5rem;
+}
+.top1 h4{
+    text-align: center;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 2rem;
 }
 .top1 p{
-    padding-top: 1rem;
-    width: 470px;
-    height: 88px;
+    width: 30rem;
+    text-align: center;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    text-align: center;
     text-transform: capitalize;
     font-feature-settings: 'calt' off, 'kern' off;
     color: #767676;
+}
+.angry-grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+    margin-top: 17px;
+  }
+  #item-6 {
+     background-color: #FFFFFF;
+     /* grid-row-start: 1;
+     grid-column-start: 1; */
+      width: 647px;
+     height: 783px;
+     /* grid-row-end: 2;
+     grid-column-end: 2; */
+  }
+  #item-7 {
+     background-color: #FFFFFF;
+      width: 633px;
+     height: 783px;
+  }
+  .university-container{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     padding-top: 42px;
+  }
+  
+  .student-toronto h1{
+     width: 183px;
+     height: 42px;
+     font-weight: 500;
+     color: #2B2B2B;
+     font-size: 18px;
+     line-height: 123.6%;
+     text-transform: capitalize;
+  }
+  .student-toronto h2{
+     padding-block: 16px;
+     width: 65px;
+     font-weight: 400;
+     color: #2B2B2B;
+     font-size: 15px;
+     line-height: 24px;
+     text-transform: capitalize;
+     font-feature-settings: 'calt' off, 'kern' off;
+  }
+  .date{
+     width: 79px;
+     height: 28px;
+     background: #FFB400;
+     font-weight: 400;
+     font-size: 10px;
+     line-height: 100.9%;
+     color: #FFFFFF;
+     border-radius: 1px;
+  }
+     .date p{
+        position: relative;
+        left: 7%;
+     }
+     hr{
+        /* margin-block: 1.5rem;
+        margin-inline: 3.5rem; */
+        margin: 0 auto;
+        width: 600.98px;
+        border: 1.5px solid #F0F0F6;
+     }
+     .line hr{
+        width: 587.97px;
+        margin: 0 auto;
+     }
+     .degree h1{
+        Width:192px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 123.6%;
+        text-transform: capitalize;
+        color: #2B2B2B;
+     }
+     .degree h2{
+        font-weight: 400;
+        width: 357.52px;
+        color: #767676;
+        height: 124.05px;
+        font-size: 15px;
+        line-height: 24px;
+        text-transform: capitalize;
+        font-feature-settings: 'calt' off, 'kern' off;
+        text-align: left;
+        
+     }
 
+
+.info{
+    margin-block: 2rem;
+    width: 651.52px;
+    height: 47.21px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 123.6%;
+    text-transform: capitalize;
+    color: #2B2B2B;
 }
 
-
-
+form {
+    padding: 3rem;
+    width: 100%;
+    height: 784.79px;
+    background: #fff;
+}
+input{
+    padding-left:2rem
+}
+#fName {
+    margin-top: 1rem;
+    width: 100%;
+    height: 59.01px;
+    background: #F0F0F6;
+    border: none;
+}
+#email {
+    width: 100%;
+    height: 59.01px;
+    background: #F0F0F6;
+    border: none;
+}
+#subject {
+    width: 100%;
+    height: 59.01px;
+    background: #F0F0F6;
+    border: none;
+}
+#message {
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    width: 100%;
+    height: 193px;
+    background: #F0F0F6;
+    border: none
+}
+.send{
+    height: 70px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    background: #FFB400;
+    border-radius: 10px;
+    border: none;
+}
+label{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+    text-transform: capitalize;
+    color: #767676;
+}
