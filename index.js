@@ -17,7 +17,7 @@ const navItems = ['Home', 'Service', 'About', 'Contact'];
     let currentSectionIndex =sections.length - 1;
     for (let i = 0; i < sections.length; i++) {
       const rect =sections[i].getBoundingClientRect();
-      if(rect.top <= window.innerHeight / 2) {
+      if(rect.top <= window.innerHeight / 10) {
         currentSectionIndex = i;
     }
   }
@@ -190,19 +190,26 @@ workSection.innerHTML = WorksArr.map(work =>
     let valid = true;
     // validate name field
     if (nameField.value.trim() === "") {
-      nameError.textContent = "Name field is required.";
+      nameError.textContent = "Name field can't be blank.";
+      fName.style.border = "1px solid red";
       valid = false;
     } else {
+      nameField.style.border = "2px solid green";
       nameError.textContent = "";
+      
     }
     // validate email field
     if (emailField.value.trim() === "") {
-      emailError.textContent = "Email field is required.";
+      emailError.textContent = "Email field can't be blank.";
+      
+      email.style.border = "2px solid red";
       valid = false;
     } else if (!isValidEmail(emailField.value)) {
       emailError.textContent = "Please enter a valid email address.";
+      
       valid = false;
     } else {
+      emailField.style.border = "2px solid green";
       emailError.textContent = "";
     }
     // if form is valid, submit the form
@@ -212,6 +219,7 @@ workSection.innerHTML = WorksArr.map(work =>
     }
     return false;
   }
+
   function isValidEmail(email) {
     const emailRules = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailRules.test(email);

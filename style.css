@@ -40,6 +40,7 @@ nav{
     color : #525050;
     text-decoration: none;
     padding: 14px 16px;
+    transition: 1222ms;
 }
 #navbar a.active{
     margin-top: 1rem;
