@@ -202,7 +202,7 @@ workSection.innerHTML = WorksArr.map(work =>
     if (emailField.value.trim() === "") {
       emailError.textContent = "Email field can't be blank.";
       
-      email.style.border = "2px solid red";
+      email.style.border = "1px solid red";
       valid = false;
     } else if (!isValidEmail(emailField.value)) {
       emailError.textContent = "Please enter a valid email address.";
