@@ -47,6 +47,9 @@ nav{
     transition: 1222ms;
     text-decoration: underline 2.5px solid #FFB400;
 }
+#navbar a.active:hover{
+ box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
 a.item{
     border-bottom: 2px solid #FFB400;
 }
